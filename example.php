@@ -1,10 +1,4 @@
-# ComplexMath
-Class for complex numbers.
-
-# Usage
-
-
-```php
+<?php
 
 declare(strict_types=1);
 
@@ -37,4 +31,5 @@ try {
 } catch (\Throwable $e) {
 	printf("Exception \"%s\" with message \"%s\" in %s on line %u", get_class($e), $e->getMessage(), $e->getFile(), $e->getLine());
 } // end try
-```
+
+?>
