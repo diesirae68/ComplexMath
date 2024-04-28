@@ -64,7 +64,7 @@ final class Complex {
         $result = new self;
         $tmp = $this->real * $this->real + $this->imag * $this->imag;
         if ($tmp == 0.0) {
-            throw new \Exception(sprintf('%s(): Division by zero', __METHOD__));
+            throw new \InvalidArgumentException(sprintf('%s(): Division by zero', __METHOD__));
         } // end if
         $result->real = ($this->real * $y->real + $this->imag * $y->imag) / $tmp;
         $result->imag = ($this->real * $y->imag - $this->imag * $y->real) / $tmp;
